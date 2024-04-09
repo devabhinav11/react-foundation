@@ -77,3 +77,16 @@
   background-color: green;
   color: #eee;
 }
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.shimmer {
+  height: 300px;
+  width: 300px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #ccc;
+}
