@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 const RestaurantCard = ({ resData }) => {
-  const { name, cloudinaryImageId, costForTwo, cuisines, avgRating } =
+  const { id, name, cloudinaryImageId, costForTwo, cuisines, avgRating } =
     resData?.info;
   return (
     <div className="card">
@@ -13,7 +15,7 @@ const RestaurantCard = ({ resData }) => {
         />
       </div>
       <div className="restaurant-details-1">
-        <h4>{name}</h4>
+        <Link to={`/restaurants/restaurant/${id}`}>{name}</Link>
         <span className="rating">{avgRating} ⭐️</span>
       </div>
       <div className="restaurant-details-2">
